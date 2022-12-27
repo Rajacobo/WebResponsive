@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 3rem;
+    font-size: 1.6rem;
+}
+.cabecera{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.cabecera :nth-child(2){
+    display: none;
+}
+.cabecera :nth-child(3){
+    display: none;
+}
+.principal__banner{
+    padding: 1rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    background-image: url(../img/illustration-intro.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 420px;
+    height: 400px;
+}
+.principal__titulo{
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 2rem;
+    text-align: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+.principal__titulo h1{
+    color: #232C50;
+}
+.principal__titulo p{
+    color: #737479;
+}
+.articulo__unico{
+    text-align: center;
+    padding: 1.6rem;
+    font-size: 2rem;
+}
+.articulo__unico h2{
+    color: #232C50;
+    margin-bottom: 1rem;
+}
+.articulo__unico p{
+    color: #737479;
+}
+.articulos__iguales{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+.articulos__iguales p{
+    color:#737479;
+}
+.articulos__iguales__header{
+    border-bottom-left-radius: 25%;
+    border-top-left-radius: 25%;
+    display: flex;
+    align-items: center;
+    background-color: #f5e7df;
+    gap: 0.5rem;
+}
+.articulos__iguales__header__numero{
+    background-color: #F3603B;
+    border-radius: 25px;
+    height: 30px;
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.articulos__iguales__header h4{
+    color: #232C50;
+}
+.comentarios{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+#comentario1{
+    display: none;
+}
+#comentario3{
+    display: none;
+}
+.comentarios__titulo{
+    align-self: center;
+    color: #232C50;
+}
+.comentarios__cajas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.comentarios__cajas p{
+    color:#737479;
+}
+.botones{
+    text-align: center;
+}
+.comentarios__boton{
+    text-align: center;
+}
+.pie1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3603B;
+    height: 300px;
+    color: white;
+    text-align: center;
+    font-size: 2.3rem;
+    gap: 2rem;
+}
+.pie2{
+    background-color: #1E1E26;
+}
+.pie2__cajas form{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.pie2__cajas{
+    display: flex;
+    flex-direction: column;
+}
+.pie2__navegadores{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+.pie2__cajas ul li a{
+    text-decoration: none;
+    color: white;
+}
+.pie2__cajas ul{
+    list-style-type: none;
+    padding: 1rem;
+}
+.pie2__cajas ul li{
+    padding: 0.5rem;
+}
+.pie2__cajas__logo{
+    display: flex;
+    justify-content: center;
+    order: +1;
+    padding: 2rem;
+}
+.pie2__cajas__iconos{
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+.pie2__cajas__iconos i{
+    color: white;
+    font-size: 3rem;
+}
+.boton1{
+    background-color: #F3603B;
+    width: 120px;
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.botonUnico{
+    background-color: white;
+    width: 120px;
+    border-radius: 25px;
+    height: 40px;
+    border: none;
+    color:#F3603B;
+    font-weight: bold;
+}
+.boton2{
+    background-color: #F3603B;
+    color: white;
+    border-radius: 25px;
+    height: 40px;
+    width: 60px;
+}
+.iEmail{
+    border-radius: 25px;
+    height: 40px;
+    width: 240px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1280px){
+    .cabecera :nth-child(2){
+        display: block;
+    }
+    .cabecera :nth-child(3){
+        display: block;
+    }
+    .cabecera__hamburguera{
+        display: none;
+    }
+    .cabecera__navegador ul{
+        list-style-type: none;
+        display: flex;
+    }
+    .cabecera__navegador ul li{
+        padding: 1rem;
+    }
+    .cabecera__navegador ul li a{
+        text-decoration: none;
+        color:#232C50 ;
+    }
+    .principal{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .principal__banner{
+        width: 440px;
+        height: 420px;
+        max-width: 50%;
+        order: +1;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .principal__titulo{
+        max-width: 45%;
+    }
+    .articulos{
+        display: flex;
+        justify-content: space-around;
+        gap: 10rem;
+    }
+    .articulo__unico{
+        padding-top: 4rem;
+        max-width: 50%;
+        text-align: left;
+    }
+    .articulos__iguales{
+        max-width: 80%; 
+    }
+    .articulos__iguales p{
+        padding: 1rem;
+        text-align: left;
+        margin-left: 5.3rem;
+    }
+    .articulos__iguales h4{
+        margin-left: 1rem;
+    }
+    .comentarios__cajas{
+        max-width: 25%; 
+        display: flex;
+        gap: 2rem;
+        text-align: center;
+    }
+    .todosLosComentarios{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .botones{
+        display: none;
+    }
+    #comentario1{
+        display: block;
+    }
+    #comentario3{
+        display: block;
+    }
+    .comentarios__boton{
+        margin-bottom: 5rem;
+    }
+    .pie2{
+        display: flex;
+        justify-content: space-around;
+    }
+    #pielogo{
+        order: -1;
+    }
+    #formulario{
+        order: 3;
+    }
+    #navBot{
+        order: 2;
+    }
+    .pie2__cajas__logo{
+        order: -1;
+    }
+    li:hover{
+        text-shadow: 3px 3px 6px rgb(243, 96, 59);
+    }
+    .boton1:hover {
+        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+        color: rgba(255, 255, 255, 1) !important;
+        transition: all 0.2s ease;
+    }
+    .botonUnico:hover{
+        box-shadow: 0 4px 16px rgba(255, 255, 255, 1);
+        color:  rgba(49, 138, 172, 1)!important;
+        transition: all 0.2s ease;
+    }
+    .boton2:hover {
+        box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+        outline-color: rgba(49, 138, 172, 0);
+        outline-offset: 80px;
+        text-shadow: 1px 1px 6px #fff;
+    }
+}    
+
